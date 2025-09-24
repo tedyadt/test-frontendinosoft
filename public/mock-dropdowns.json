@@ -1,0 +1,28 @@
+{
+  "locations": [
+    { "id": "LOC-JKT", "name": "Jakarta" },
+    { "id": "LOC-BDG", "name": "Bandung" },
+    { "id": "LOC-SBY", "name": "Surabaya" }
+  ],
+  "relatedTo": [
+    { "id": "PR-001", "name": "Project Alpha" },
+    { "id": "PR-002", "name": "Project Beta" }
+  ],
+  "items": [
+    {
+      "id": "IT-001",
+      "name": "Pompa AC",
+      "lots": [
+        { "lotId": "L1", "alokasi": "Gudang A", "pemilik": "PT X", "kondisi": "Baik", "jumlahTersedia": 100 },
+        { "lotId": "L2", "alokasi": "Gudang B", "pemilik": "PT X", "kondisi": "Rusak", "jumlahTersedia": 50 }
+      ]
+    },
+    {
+      "id": "IT-002",
+      "name": "Panel Listrik",
+      "lots": [
+        { "lotId": "L3", "alokasi": "Gudang A", "pemilik": "PT Y", "kondisi": "Baik", "jumlahTersedia": 200 }
+      ]
+    }
+  ]
+}

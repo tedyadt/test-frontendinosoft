@@ -1,23 +1,27 @@
 import React from "react";
 
-const Datatable = ({ data }) => {
+const Datatable = ({ data, onRowClick }) => {
   return (
     <div className="overflow-x-auto rounded-2xl shadow-sm">
       <table className="min-w-full divide-y divide-gray-200 text-sm">
         <thead className="bg-gray-300">
           <tr>
-            <th className="px-6 py-3 text-left font-medium text-gray-600">RequestNumber</th>
+            <th className="px-6 py-3 text-left font-medium text-gray-600">Request Number</th>
             <th className="px-6 py-3 text-left font-medium text-gray-600">Location</th>
             <th className="px-6 py-3 text-left font-medium text-gray-600">Type</th>
-            <th className="px-6 py-3 text-left font-medium text-gray-600">DateSubmitted</th>
-            <th className="px-6 py-3 text-left font-medium text-gray-600">RelatedTo</th>
+            <th className="px-6 py-3 text-left font-medium text-gray-600">Date Submitted</th>
+            <th className="px-6 py-3 text-left font-medium text-gray-600">Related To</th>
             <th className="px-6 py-3 text-left font-medium text-gray-600">Status</th>
           </tr>
         </thead>
         <tbody className="divide-y divide-gray-200 bg-white">
           {data.length > 0 ? (
             data.map((item) => (
-              <tr key={item.id}>
+              <tr
+                key={item.requestNumber}
+                className="cursor-pointer hover:bg-gray-50"
+                onClick={() => onRowClick && onRowClick(item)}
+              >
                 <td className="px-6 py-4 text-gray-800">{item.requestNumber}</td>
                 <td className="px-6 py-4 text-gray-800">{item.location}</td>
                 <td className="px-6 py-4 text-gray-800">{item.type}</td>
@@ -43,10 +47,7 @@ const Datatable = ({ data }) => {
             ))
           ) : (
             <tr>
-              <td
-                colSpan="3"
-                className="px-6 py-4 text-center text-gray-500 italic"
-              >
+              <td colSpan="6" className="px-6 py-4 text-center text-gray-500 italic">
                 Tidak ada data
               </td>
             </tr>

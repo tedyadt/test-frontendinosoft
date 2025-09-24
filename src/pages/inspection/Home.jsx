@@ -39,14 +39,14 @@ export default function Home() {
   ];
 
   return (
-   <div className="w-full p-4">
+   <div className="w-full p-6 bg-gray-100 mt-2">
       {/* Breadcrumb  */}
       <p className="text-2xl text-black font-semibold mb-2 text-left">Inspection Record</p>
       <ol className="flex items-center whitespace-nowrap mb-6">
         <li className="inline-flex items-center">
           <a
             href="#"
-            className="flex items-center text-sm font-semibold text-cyan-600 hover:text-cyan-600 focus:outline-hidden focus:text-cyan-600"
+            className="flex items-center text-sm font-semibold text-gray-800 hover:text-cyan-600 focus:outline-hidden focus:text-cyan-600"
           >
             Home
           </a>
