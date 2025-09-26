@@ -7,13 +7,16 @@ import Home from './pages/inspection/home.jsx'
 import 'preline/preline'
 import React from "react";
 import { DropdownsProvider } from "./context/DropdownsContext";
+import { BrowserRouter } from "react-router-dom";
 
 
 
 createRoot(document.getElementById('root')).render(
   <React.StrictMode>
+    <BrowserRouter>
     <DropdownsProvider>
       <Home />
     </DropdownsProvider>
+    </BrowserRouter>
   </React.StrictMode>,
 )
