@@ -29,6 +29,11 @@ Jalankan project:
 
 npm run dev
 
+
+Link Demo Website:
+https://drive.google.com/file/d/1PCcYEICoKAdGHkaXTFWA-LtZcTmHZ0l_/view?usp=sharing
+
+ 
 🎨 Styling
 
 Project ini menggunakan TailwindCSS.
@@ -39,8 +44,7 @@ Tailwind sudah dikonfigurasi di dalam project, jadi setelah npm install, styling
 Dropdown diambil dari file mock-dropdown.json menggunakan Axios.
 Create, Detail, dan Submit data disimpan di LocalStorage.
 👉 Saat pertama kali menggunakan aplikasi, Anda harus membuat data atau submit melalui create request terlebih dahulu sebelum bisa melihat detail dan menampilkan data pada tabel
-Data yang digunakan bersifa dummy
+Mohon maaf bila ada sedikit perbedaan struktur response json saya dikarenakan saya tidak melihat email yang berisi tentang struktur file-json nya dalam 3 hari saya fokus mengerjakan. Namun Setelah saya lihat struktur respone json nya kurang lebih sama dan sudah sesuai dengan kriteria yang diberikan.
+Terima Kasih.
 
-Link Demo Website:
-https://drive.google.com/file/d/1cENYw_E4PMQidmcgLoFOMFojzrOwwSz0/view?usp=sharing
- 
+
