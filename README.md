@@ -22,9 +22,11 @@ git clone https://github.com/username/nama-project.git
 cd nama-project
 
 Install dependencies:
+
 npm install
 
 Jalankan project:
+
 npm run dev
 
 🎨 Styling
